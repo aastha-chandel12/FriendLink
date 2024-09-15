@@ -1,0 +1,125 @@
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 150px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #262626;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.mutual-friends {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add {
+    background-color: #0095f6;
+    color: white;
+}
+
+.btn-add:hover {
+    background-color: #007bbd;
+}
+
+.btn-remove {
+    background-color: #ed4956;
+    color: white;
+}
+
+.btn-remove:hover {
+    background-color: #c73c49;
+}
+
+.btn-accept {
+    background-color: #0095f6;
+    color: white;
+}
+
+.btn-accept:hover {
+    background-color: #007bbd;
+}
+
+.btn-reject {
+    background-color: #ed4956;
+    color: white;
+}
+
+.btn-reject:hover {
+    background-color: #c73c49;
+}
+
+.search-container {
+    position: relative;
+    width: 60%;
+    margin: 20px auto;
+    /* Center the search box horizontally */
+}
+
+.search-input {
+    width: 50%;
+    padding: 10px 15px;
+    padding-left: 40px;
+    /* Add padding to the left to accommodate the icon */
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.search-input::placeholder {
+    color: #999;
+    font-style: italic;
+}
