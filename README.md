@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# FriendLink
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FriendLink is a social media web application that allows users to connect with friends, send friend requests, accept/reject requests, and view friend recommendations based on mutual connections.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User authentication (Sign up & Log in)
+- Send and receive friend requests
+- Accept or reject friend requests
+- View a list of friends
+- See friend recommendations based on mutual friends
+- Search users by username
+- Responsive design, styled to look like Instagram
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, Axios, React Router, React Toastify
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Version Control**: Git, GitHub
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/aastha-chandel12/FriendLink.git
+Navigate to the project directory:
 
-### `npm run build`
+bash
+Copy code
+cd FriendLink
+Install the dependencies for both frontend and backend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For frontend:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+cd frontend
+npm install
+For backend:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+cd backend
+npm install
+Usage
+Run the backend server:
 
-### `npm run eject`
+bash
+Copy code
+cd backend
+npm start
+The backend will run on http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Run the frontend development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+cd frontend
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+API Endpoints
+POST /api/signup: Create a new user account.
+POST /api/login: Authenticate and log in a user.
+GET /api/users: Fetch all users.
+POST /api/friend-request: Send a friend request.
+POST /api/friend-request/accept: Accept a friend request.
+POST /api/friend-request/reject: Reject a friend request.
+GET /api/friends: Fetch a list of friends.
+GET /api/recommendations: Get friend recommendations.
