@@ -71,3 +71,6 @@ POST /api/friend-request/accept: Accept a friend request.
 POST /api/friend-request/reject: Reject a friend request.
 GET /api/friends: Fetch a list of friends.
 GET /api/recommendations: Get friend recommendations.
+<img width="1222" alt="Screenshot 2024-09-15 at 10 24 34 PM" src="https://github.com/user-attachments/assets/60d84c26-3456-4d77-93b4-35760f38cbae">
+<img width="1080" alt="Screenshot 2024-09-15 at 10 30 53 PM" src="https://github.com/user-attachments/assets/cb7549d2-f739-49a1-b4f2-867056cf27dc">
+<img width="1080" alt="Screenshot 2024-09-15 at 10 32 05 PM" src="https://github.com/user-attachments/assets/175cc5f4-3081-48ca-9d49-d71b4a66c792">
