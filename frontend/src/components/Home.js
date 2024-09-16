@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Home.css'; // Import the CSS file
 
 const Home = () => {
-
+    const [darkMode, setDarkMode] = useState(false);  // Dark mode state
     const [users, setUsers] = useState([]);
     const [friends, setFriends] = useState([]);
     const [recommendations, setRecommendations] = useState([]);
@@ -130,6 +130,12 @@ const Home = () => {
         navigate('/login');  // Redirect to login page
     };
 
+    // Toggle dark mode
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+        document.body.classList.toggle('dark-mode');  // Add or remove dark mode class on body
+    };
+
     // Filter users based on search term
     const filteredUsers = users.filter(user =>
         user.username.toLowerCase().includes(searchTerm.toLowerCase())
@@ -140,6 +146,9 @@ const Home = () => {
         <div className="container">
 
             <h2 className="title">All Users</h2>
+            <button className="btn btn-toggle" onClick={toggleDarkMode}>
+                {darkMode ? 'Light Mode' : 'Dark Mode'}
+            </button>
             <input
                 type="text"
                 placeholder="Search users..."
@@ -205,8 +214,9 @@ const Home = () => {
                 )}
             </div>
 
-            <button className="btn btn-logout" onClick={logout}>Logout</button>  {/* Logout button */}
+            {/* <button className="btn btn-logout" onClick={logout}>Logout</button>  Logout button */}
 
+            <button className="btn btn-toggle" onClick={logout}>Logout</button>  {/* Logout button */}
             <ToastContainer />
         </div>
     );
